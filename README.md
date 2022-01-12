@@ -1,24 +1,69 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+It's a simple shopping cart application where has a CRUD for cart as email and product CRUD.
+Also you can extract csv fields with detail for CRUD's, they are saved in S3 Amazon
+ Web Services 
 
-Things you may want to cover:
+# Back End
 
-* Ruby version
+The app backend is developed using Ruby on Rails. This framework is an online application framework by the server written in Ruby.
 
-* System dependencies
+#Install
 
-* Configuration
+Clone the repository
 
-* Database creation
+git clone git@github.com:Glaukg/shopping-cart.git
 
-* Database initialization
+cd shopping-cart
 
-* How to run the test suite
+#Ruby version
 
-* Services (job queues, cache servers, search engines, etc.)
+ruby -v
 
-* Deployment instructions
+The ouput should start with something like ruby 3.0.3p
 
-* ...
+If not, install the right ruby version using rbenv.
+
+#Rails Version
+
+rails -v
+
+The ouput should start with something like Rails 7.0.1
+
+#Gems 
+
+* pg
+* rack-cors
+* dotenv-rails
+* aws-sdk-s3
+
+#Database creation
+
+See config/database.yml
+
+Database is use postgresql
+
+Initialize the database
+
+* rails db:migrate
+
+#Serve
+
+rails s
+
+#Add heroku remotes
+
+Using Heroku CLI:
+
+* heroku rails db:migrate
+
+#Online Application
+
+* https://shopping-cart-ks.herokuapp.com
+
+#Deployment
+
+* heroku login
+* heroku git:clone -a shopping-cart-ks
+* cd shopping-cart-ks
+
