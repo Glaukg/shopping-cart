@@ -133,8 +133,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.0-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.0-x86_64-linux)
-      racc (~> 1.4)
+    pg (1.2.3)
     puma (5.5.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -172,7 +171,6 @@ GEM
     rake (13.0.6)
     reline (0.3.1)
       io-console (~> 0.5)
-    sqlite3 (1.4.2)
     strscan (3.0.1)
     thor (1.2.1)
     timeout (0.2.0)
@@ -185,17 +183,16 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
-  x86_64-linux
 
 DEPENDENCIES
   aws-sdk-s3 (~> 1.111, >= 1.111.1)
   bootsnap
   debug
   dotenv-rails
+  pg
   puma (~> 5.0)
   rack-cors
   rails (~> 7.0.1)
-  sqlite3 (~> 1.4)
   tzinfo-data
 
 RUBY VERSION
